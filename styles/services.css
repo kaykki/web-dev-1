@@ -9,13 +9,24 @@ h1, h2, h3, p{
     text-align: left;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+header, 
+footer {
+    background-color: lightgray;
+    padding: 0.5rem 0;
+}
+
+/* Pseudo Classes */
 a:visited {
     color: #02802c;
 }
 
 a:hover,
 a:focus {
-    color: goldenrod;
+    color: #9affbc;
 }
 
 a:focus {
@@ -23,23 +34,23 @@ a:focus {
 }
 
 a:active {
-    color: goldenrod;
+    color: #9affbc;
     background-color: #02802c;
 }
 
-.services article {
-    background-color: lightgreen;
-    padding: 2rem;
-    margin-bottom: 2rem;
+/* Title */
+.title {
+    font-size: 1rem;
+    text-align: center;
 }
 
-.services article h3 {
-    border-bottom: 1px solid black;
-    padding-bottom: 0.5rem;
-}
-
+/* Navigation Bar */
 .nav-bar {
     margin: 1.5rem 0;
+}
+
+.nav-bar ul {
+    padding: 0;
 }
 
 .nav-bar ul li{
@@ -51,10 +62,16 @@ a:active {
     text-decoration: none;
 }
 
-header, 
-footer {
-    background-color: lightgray;
-    padding: 0.5rem 0;
+/* Services */
+.services article {
+    background-color: lightgreen;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.services article h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
 }
 
 .email-link {
@@ -66,23 +83,11 @@ footer {
     width: 50%;
 }
 
+/* Customers */
 img {
     border-radius: 50%;
 }
 
 footer p {
     text-align: center;
-}
-
-.title {
-    font-size: 1rem;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-ul {
-    padding: 0;
 }
