@@ -10,7 +10,7 @@ h1, h2, h3, p{
 }
 
 a:visited {
-    color: #0000EE;
+    color: #02802c;
 }
 
 a:hover,
@@ -19,12 +19,12 @@ a:focus {
 }
 
 a:focus {
-    outline: 1px solid #0000EE;
+    outline: 1px solid #02802c;
 }
 
 a:active {
     color: goldenrod;
-    background-color: #0000EE;
+    background-color: #02802c;
 }
 
 .services article {
@@ -36,19 +36,6 @@ a:active {
 .services article h3 {
     border-bottom: 1px solid black;
     padding-bottom: 0.5rem;
-}
-
-.email-link {
-    display: inline-block;
-    background-color: green;
-    padding: 1rem 2.5rem;
-    color: white;
-    text-decoration: none;
-    width: 50%;
-}
-
-img {
-    border-radius: 50%;
 }
 
 .nav-bar {
@@ -68,6 +55,19 @@ header,
 footer {
     background-color: lightgray;
     padding: 0.5rem 0;
+}
+
+.email-link {
+    display: inline-block;
+    background-color: green;
+    padding: 1rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    width: 50%;
+}
+
+img {
+    border-radius: 50%;
 }
 
 footer p {
