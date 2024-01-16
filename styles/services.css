@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 31.25rem; /* Makes our page mobile size only */
+    max-width: 31.25rem;
 	margin: 0 auto;
     text-align: center;
 }
@@ -15,27 +15,30 @@ h2 {
 
 header, 
 footer {
-    background-color: lightgray;
+    background-color: #d3d3d3;
     padding: 0.5rem 0;
 }
 
+
 /* Pseudo Classes */
+a,
 a:visited {
-    color: #02802c;
+    color: #024517;
 }
 
 a:hover,
 a:focus {
     color: #9affbc;
+    background-color: #000000;
 }
 
 a:focus {
-    outline: 1px solid #02802c;
+    outline: 1px solid #024517;
 }
 
 a:active {
     color: #9affbc;
-    background-color: #02802c;
+    background-color: #024517;
 }
 
 /* Title */
@@ -77,10 +80,9 @@ a:active {
 .email-link {
     display: inline-block;
     background-color: green;
-    padding: 1rem 2.5rem;
+    padding: 1rem 4rem;
     color: white;
     text-decoration: none;
-    width: 50%;
 }
 
 /* Customers */
@@ -90,4 +92,8 @@ img {
 
 footer p {
     text-align: center;
+}
+
+blockquote p {
+    display: inline-block;
 }
