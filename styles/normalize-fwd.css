@@ -348,7 +348,16 @@ template {
   display: none;
 }
 
-/* FWD normalize code */
+/* Box Sizing Reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Responsive Media Elements */
 embed,
 iframe,
 object {
@@ -359,12 +368,4 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
 }
