@@ -86,7 +86,9 @@ nav a {
 /* Services Styles */
 .cards {
 	display: flex;
+	flex-direction: column;
 }
+
 
 .services article {
 	background-color: #caffca;
@@ -119,13 +121,28 @@ nav a {
 @media (min-width: 50em) {
 
 	.cards {
-		flex-direction: column;
-		flex-direction: column-reverse;
-		flex-direction: row-reverse;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		/* flex-direction: column-reverse;
+		flex-direction: row-reverse; */
+		height: 40rem;
+	}
+
+	.cards article {
+		/* width: 30%; */
+		flex: 0 1 30%;
+	}
+
+	.cards .service-1 {
+		flex: 0 1 50%;
+		order: 1;
+		/* align-self: baseline; */
 	}
 
 	.services article {
 		background-color: #caebff;
+
 	}
 
 	.services a {
@@ -134,6 +151,22 @@ nav a {
 }
 
 /* Testimonials Styles */
+@media (min-width: 50em) {
+	
+	.testimonials > *:not(article) {
+		width: 100%;
+	}
+	.testimonials {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.testimonials article {
+		width: 20rem;
+	}
+}
+
 .testimonials img {
 	display: block;
 	margin: 1rem auto;
