@@ -13,7 +13,6 @@
 # Components
 	- Header
 	- Main
-	- Sidebar
 	- Footer
 --------------------------------------------------------------*/
 
@@ -127,7 +126,28 @@ a:active {
 	background-color: #fff;
 }
 
-/* add flex styles here */
+@media (min-width: 50em) {
+
+	.site-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.site-header,
+	.site-footer {
+		width: 100%;
+	}
+
+	.site-main {
+		width: 75%;
+	}
+
+	.site-sidebar {
+		width: 25%;
+	}
+
+}
 
 /*--------------------------------------------------------------
 # Components
@@ -137,7 +157,9 @@ a:active {
 --------------------------------------------- */
 .site-header {
 	background-color: #ffe6bf;
-	/* add flex styles here */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .site-logo {
@@ -176,7 +198,6 @@ a:active {
 	top: 8rem;
 	left: 0;
 	right: 0;
-	z-index: 2;
 	background-color: #ffe6bf;
 }
 
@@ -205,14 +226,14 @@ a:active {
 	}
 
 	.site-navigation {
+		flex: 1 1 auto;
 		padding: 0 1rem;
-		/* add flex styles here */
 	}
 
 	.site-navigation ul,
 	.site-navigation.toggled ul {
-		/* add flex styles here */
-
+		display: flex;
+		justify-content: flex-end;
 		/* START - Remove Mobile Menu Styles */
 		position: relative;
 		top: 0;
